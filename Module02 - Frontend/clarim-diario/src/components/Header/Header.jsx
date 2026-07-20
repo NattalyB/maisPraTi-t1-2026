@@ -18,11 +18,9 @@ function Header({ tema, aoAlternarTema }) {
 
         {usuario ? (
           <span className='cabecalho__sessao'>
-            Olá, {usuario.nome}
-            { ' . ' }
-            <Link to='/painel'>Painel</Link>
-            { ' . ' }
-            <button className='cabecalho__sair' onClick={logout}>Sair</button>
+            Olá, {usuario.nome} -  
+            <Link to='/painel'> Painel </Link>
+            <button className='cabecalho__sair' onClick={logout}> - Sair</button>
           </span>
         ) : (
           <Link to='/login' className='cabecalho__entrar'>Entrar</Link>
